@@ -10,6 +10,16 @@
 		CD412AE920E0A40A0002C37E /* YnabApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD412ADF20E0A40A0002C37E /* YnabApi.framework */; };
 		CD412AEE20E0A40A0002C37E /* YnabApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD412AED20E0A40A0002C37E /* YnabApiTests.swift */; };
 		CD412AF020E0A40A0002C37E /* YnabApi.h in Headers */ = {isa = PBXBuildFile; fileRef = CD412AE220E0A40A0002C37E /* YnabApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD412AFE20E0A42C0002C37E /* PayeeListEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD412AFB20E0A42C0002C37E /* PayeeListEndpoint.swift */; };
+		CD412AFF20E0A42C0002C37E /* PayeeTransactionsListEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD412AFC20E0A42C0002C37E /* PayeeTransactionsListEndpoint.swift */; };
+		CD412B0020E0A42C0002C37E /* BudgetListEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD412AFD20E0A42C0002C37E /* BudgetListEndpoint.swift */; };
+		CD412B0420E0A43B0002C37E /* Budget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD412B0120E0A43B0002C37E /* Budget.swift */; };
+		CD412B0520E0A43B0002C37E /* Payee.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD412B0220E0A43B0002C37E /* Payee.swift */; };
+		CD412B0620E0A43B0002C37E /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD412B0320E0A43B0002C37E /* Transaction.swift */; };
+		CD412B0A20E0A4450002C37E /* YnabApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD412B0720E0A4440002C37E /* YnabApi.swift */; };
+		CD412B0B20E0A4450002C37E /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD412B0820E0A4440002C37E /* APIRequest.swift */; };
+		CD412B0C20E0A4450002C37E /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD412B0920E0A4440002C37E /* APIError.swift */; };
+		CD412B0E20E0A44F0002C37E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD412B0D20E0A44F0002C37E /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +39,16 @@
 		CD412AE820E0A40A0002C37E /* YnabApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YnabApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD412AED20E0A40A0002C37E /* YnabApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YnabApiTests.swift; sourceTree = "<group>"; };
 		CD412AEF20E0A40A0002C37E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD412AFB20E0A42C0002C37E /* PayeeListEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayeeListEndpoint.swift; sourceTree = "<group>"; };
+		CD412AFC20E0A42C0002C37E /* PayeeTransactionsListEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayeeTransactionsListEndpoint.swift; sourceTree = "<group>"; };
+		CD412AFD20E0A42C0002C37E /* BudgetListEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetListEndpoint.swift; sourceTree = "<group>"; };
+		CD412B0120E0A43B0002C37E /* Budget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Budget.swift; sourceTree = "<group>"; };
+		CD412B0220E0A43B0002C37E /* Payee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Payee.swift; sourceTree = "<group>"; };
+		CD412B0320E0A43B0002C37E /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		CD412B0720E0A4440002C37E /* YnabApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YnabApi.swift; sourceTree = "<group>"; };
+		CD412B0820E0A4440002C37E /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		CD412B0920E0A4440002C37E /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		CD412B0D20E0A44F0002C37E /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +91,12 @@
 		CD412AE120E0A40A0002C37E /* YnabApi */ = {
 			isa = PBXGroup;
 			children = (
+				CD412B0720E0A4440002C37E /* YnabApi.swift */,
+				CD412B0920E0A4440002C37E /* APIError.swift */,
+				CD412B0820E0A4440002C37E /* APIRequest.swift */,
+				CD412B0F20E0A4520002C37E /* Shared */,
+				CD412AF920E0A4170002C37E /* Endpoints */,
+				CD412AFA20E0A41F0002C37E /* Models */,
 				CD412AE220E0A40A0002C37E /* YnabApi.h */,
 				CD412AE320E0A40A0002C37E /* Info.plist */,
 			);
@@ -84,6 +110,34 @@
 				CD412AEF20E0A40A0002C37E /* Info.plist */,
 			);
 			path = YnabApiTests;
+			sourceTree = "<group>";
+		};
+		CD412AF920E0A4170002C37E /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				CD412AFD20E0A42C0002C37E /* BudgetListEndpoint.swift */,
+				CD412AFB20E0A42C0002C37E /* PayeeListEndpoint.swift */,
+				CD412AFC20E0A42C0002C37E /* PayeeTransactionsListEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		CD412AFA20E0A41F0002C37E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD412B0120E0A43B0002C37E /* Budget.swift */,
+				CD412B0220E0A43B0002C37E /* Payee.swift */,
+				CD412B0320E0A43B0002C37E /* Transaction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CD412B0F20E0A4520002C37E /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				CD412B0D20E0A44F0002C37E /* Result.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +202,7 @@
 				TargetAttributes = {
 					CD412ADE20E0A40A0002C37E = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					CD412AE720E0A40A0002C37E = {
 						CreatedOnToolsVersion = 10.0;
@@ -194,6 +249,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD412AFF20E0A42C0002C37E /* PayeeTransactionsListEndpoint.swift in Sources */,
+				CD412AFE20E0A42C0002C37E /* PayeeListEndpoint.swift in Sources */,
+				CD412B0620E0A43B0002C37E /* Transaction.swift in Sources */,
+				CD412B0420E0A43B0002C37E /* Budget.swift in Sources */,
+				CD412B0020E0A42C0002C37E /* BudgetListEndpoint.swift in Sources */,
+				CD412B0520E0A43B0002C37E /* Payee.swift in Sources */,
+				CD412B0E20E0A44F0002C37E /* Result.swift in Sources */,
+				CD412B0B20E0A4450002C37E /* APIRequest.swift in Sources */,
+				CD412B0A20E0A4450002C37E /* YnabApi.swift in Sources */,
+				CD412B0C20E0A4450002C37E /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +404,7 @@
 		CD412AF420E0A40A0002C37E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -356,6 +422,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vivir.YnabApi;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +431,7 @@
 		CD412AF520E0A40A0002C37E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +457,7 @@
 		CD412AF720E0A40A0002C37E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7R7P8GYMNZ;
 				INFOPLIST_FILE = YnabApiTests/Info.plist;
@@ -407,6 +476,7 @@
 		CD412AF820E0A40A0002C37E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7R7P8GYMNZ;
 				INFOPLIST_FILE = YnabApiTests/Info.plist;
