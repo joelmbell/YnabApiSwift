@@ -8,27 +8,27 @@
 
 import Foundation
 
-struct TransactionList: Codable {
-    let transactions: [Transaction]
+public struct TransactionList: Codable {
+    public let transactions: [Transaction]
 }
 
-struct Transaction: Codable {
-    let id: String
-    let date: String
-    let amount: Int
-    let memo: String?
-    let cleared: String
-    let approved: Bool
-    let flag_color: String?
-    let account_id: String
-    let payee_id: String?
-    let category_id: String?
-    let transfer_account_id: String?
-    let import_id: String?
-    let deleted: Bool
-    let type: String
-    let parent_transaction_id: String?
-    let account_name: String
-    let payee_name: String?
-    let category_name: String?
+public struct Transaction: Codable {
+    public let id: String
+    public let date: String
+    public let amount: Int
+    public let memo: String?
+    public let cleared: String
+    public let approved: Bool
+    public let flag_color: String?
+    public let account_id: String
+    public let payee_id: String?
+    public let category_id: String?
+    public let transfer_account_id: String?
+    public let import_id: String?
+    public let deleted: Bool
+    public let type: String
+    public let parent_transaction_id: String?
+    public let account_name: String
+    public let payee_name: String?
+    public let category_name: String?
 }

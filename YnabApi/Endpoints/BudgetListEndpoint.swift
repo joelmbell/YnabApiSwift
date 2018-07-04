@@ -8,13 +8,13 @@
 
 import Foundation
 
-struct BudgetListEndpoint: Endpoint {
+public struct BudgetListEndpoint: Endpoint {
 
-    var path: String {
+    public var path: String {
         return "/budgets"
     }
 
-    struct Data: YnabResource {
-        let data: BudgetList
+    public struct Data: YnabResource {
+        public let data: BudgetList
     }
 }

@@ -8,16 +8,16 @@
 
 import Foundation
 
-struct BudgetList: Codable {
-    let budgets: [Budget]
+public struct BudgetList: Codable {
+    public let budgets: [Budget]
 }
 
-struct Budget: Codable {
-    let id: String
-    let name: String
-    let lastModifiedOn: String
-    let firstMonth: String
-    let lastMonth: String
+public struct Budget: Codable {
+    public let id: String
+    public let name: String
+    public let lastModifiedOn: String
+    public let firstMonth: String
+    public let lastMonth: String
 
     //"date_format": {
     //    "format": "MM/DD/YYYY"

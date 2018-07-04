@@ -8,11 +8,11 @@
 
 import Foundation
 
-enum Result<Value> {
+public enum Result<Value> {
     case success(Value)
     case failure(Error)
 
-    var value: Value? {
+    public var value: Value? {
         switch self {
         case .success(let value): return value
         case .failure: return nil

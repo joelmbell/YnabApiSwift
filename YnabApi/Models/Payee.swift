@@ -8,16 +8,16 @@
 
 import Foundation
 
-struct PayeeList: Codable {
-    let payees: [Payee]
+public struct PayeeList: Codable {
+    public let payees: [Payee]
 }
 
-struct Payee: Codable {
+public struct Payee: Codable {
 
-    let id: String
-    let name: String
-    let transferAccountId: String?
-    let deleted: Bool
+    public let id: String
+    public let name: String
+    public let transferAccountId: String?
+    public let deleted: Bool
 
     enum CodingKeys: String, CodingKey {
         case id

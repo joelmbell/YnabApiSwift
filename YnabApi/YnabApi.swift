@@ -8,32 +8,32 @@
 
 import Foundation
 
-protocol Endpoint {
+public protocol Endpoint {
     associatedtype Data: YnabResource
     var path: String { get }
 }
 
-protocol YnabResource: Codable {}
+public protocol YnabResource: Codable {}
 
-protocol Cancellable {
+public protocol Cancellable {
     func cancel()
 }
 extension URLSessionDataTask: Cancellable {}
 
-let defaultServer = "https://api.youneedabudget.com/v1"
+public let defaultServer = "https://api.youneedabudget.com/v1"
 
-class YnabApi {
+public class YnabApi {
 
-    let session: URLSession
-    let token: String
+    public let session: URLSession
+    public let token: String
 
-    init(token: String, server: String = defaultServer, session: URLSession = .shared) {
+    public init(token: String, server: String = defaultServer, session: URLSession = .shared) {
         self.session = session
         self.token = token
     }
 
     @discardableResult
-    func fetch<T: Endpoint>(endpoint: T, callback: @escaping (Result<T.Data>) -> Void) -> Cancellable? {
+    public func fetch<T: Endpoint>(endpoint: T, callback: @escaping (Result<T.Data>) -> Void) -> Cancellable? {
         let request = APIRequest(path: endpoint.path, authToken: token)
         return self.fetch(request: request) { (result) in
             switch result {

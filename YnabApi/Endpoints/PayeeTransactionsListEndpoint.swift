@@ -8,20 +8,20 @@
 
 import Foundation
 
-struct PayeeTransactionsListEndpoint: Endpoint {
+public struct PayeeTransactionsListEndpoint: Endpoint {
 
-    let budget: String
-    let payee: String
-    var path: String {
+    public let budget: String
+    public let payee: String
+    public var path: String {
         return "/budgets/\(budget)/payees/\(payee)/transactions"
     }
 
-    init(budget: String, payee: String) {
+    public init(budget: String, payee: String) {
         self.budget = budget
         self.payee = payee
     }
 
-    struct Data: YnabResource {
-        let data: TransactionList
+    public struct Data: YnabResource {
+        public let data: TransactionList
     }
 }

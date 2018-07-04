@@ -8,18 +8,18 @@
 
 import Foundation
 
-struct PayeeListEndpoint: Endpoint {
+public struct PayeeListEndpoint: Endpoint {
 
-    let budget: String
-    var path: String {
+    public let budget: String
+    public var path: String {
         return "/budgets/\(budget)/payees"
     }
 
-    init(budget: String) {
+    public init(budget: String) {
         self.budget = budget
     }
 
-    struct Data: YnabResource {
-        let data: PayeeList
+    public struct Data: YnabResource {
+        public let data: PayeeList
     }
 }
