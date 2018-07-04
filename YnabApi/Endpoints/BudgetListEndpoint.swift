@@ -10,7 +10,7 @@ import Foundation
 
 public struct BudgetListEndpoint: Endpoint {
 
-    public init {}
+    public init() {}
 
     public var path: String {
         return "/budgets"
