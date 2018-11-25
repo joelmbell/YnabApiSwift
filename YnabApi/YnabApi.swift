@@ -33,19 +33,35 @@ public class YnabApi {
     }
 
     @discardableResult
-    public func fetch<T: Endpoint>(endpoint: T, callback: @escaping (Result<T.Data>) -> Void) -> Cancellable? {
-        let request = APIRequest(path: endpoint.path, authToken: token)
-        return self.fetch(request: request) { (result) in
-            switch result {
-            case .failure(let error): callback(.failure(error))
+    public func fetch<T: Endpoint>(endpoint: T, callback: @escaping (APIResponse<T.Data>) -> Void) -> Cancellable? {
+
+        let fullPath = "\(defaultServer)/\(endpoint.path)"
+        let request = APIRequest(path: fullPath, authToken: token)
+
+        return self.fetch(request: request) { (response) in
+            switch response.result {
+            case .failure(let error):
+                let result: Result<T.Data> = .failure(error)
+                let response = APIResponse(result: result, response: nil)
+                callback(response)
             case .success(let value):
 
+                let decoder = JSONDecoder()
                 do {
-                    let decoder = JSONDecoder()
                     let list = try decoder.decode(T.Data.self, from: value)
-                    callback(.success(list))
+
+                    let result: Result<T.Data> = .success(list)
+                    let response = APIResponse(result: result, response: nil)
+                    callback(response)
                 } catch {
-                    callback(.failure(error))
+                    var error = error
+                    if let errorResponse = try? decoder.decode(APIErrorResponse.self, from: value) {
+                        error = APIError.apiError(response: errorResponse)
+                    }
+
+                    let result: Result<T.Data> = .failure(error)
+                    let response = APIResponse(result: result, response: nil)
+                    callback(response)
                     return
                 }
             }
@@ -53,28 +69,37 @@ public class YnabApi {
     }
 
     @discardableResult
-    func fetch(request: APIRequest?, callback: @escaping (Result<Data>) -> Void) -> Cancellable? {
+    func fetch(request: APIRequest?, callback: @escaping (APIResponse<Data>) -> Void) -> Cancellable? {
         guard let request = request else {
-            callback(.failure(APIError.invalidRequest))
+            let result: Result<Data> = .failure(APIError.invalidRequest)
+            let response = APIResponse(result: result, response: nil)
+            callback(response)
             return nil
         }
         return self.fetch(request: request.urlRequest, callback: callback)
     }
 
     @discardableResult
-    func fetch(request: URLRequest, callback: @escaping (Result<Data>) -> Void) -> Cancellable {
+    func fetch(request: URLRequest, callback: @escaping (APIResponse<Data>) -> Void) -> Cancellable {
         let task = session.dataTask(with: request) { (data, response, error) in
             DispatchQueue.main.async {
                 if let error = error {
-                    callback(.failure(error))
+                    let result: Result<Data> = .failure(error)
+                    let response = APIResponse(result: result, response: response)
+                    callback(response)
                     return
                 }
 
                 guard let data = data else {
-                    callback(.failure(APIError.noData))
+                    let result: Result<Data> = .failure(APIError.noData)
+                    let response = APIResponse(result: result, response: response)
+                    callback(response)
                     return
                 }
-                callback(.success(data))
+
+                let result: Result<Data> = .success(data)
+                let response = APIResponse(result: result, response: response)
+                callback(response)
             }
         }
         task.resume()

@@ -12,4 +12,5 @@ public enum APIError: Error {
     case noData
     case invalidData
     case invalidRequest
+    case apiError(response: APIErrorResponse)
 }

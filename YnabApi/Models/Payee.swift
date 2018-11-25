@@ -16,13 +16,13 @@ public struct Payee: Codable {
 
     public let id: String
     public let name: String
-    public let transferAccountId: String?
+    public let transfer_account_id: String?
     public let deleted: Bool
 
     enum CodingKeys: String, CodingKey {
         case id
         case name
-        case transferAccountId = "transfer_account_id"
+        case transfer_account_id
         case deleted
     }
 }

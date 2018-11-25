@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CD412AE920E0A40A0002C37E /* YnabApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD412ADF20E0A40A0002C37E /* YnabApi.framework */; };
-		CD412AEE20E0A40A0002C37E /* YnabApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD412AED20E0A40A0002C37E /* YnabApiTests.swift */; };
 		CD412AF020E0A40A0002C37E /* YnabApi.h in Headers */ = {isa = PBXBuildFile; fileRef = CD412AE220E0A40A0002C37E /* YnabApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD412AFE20E0A42C0002C37E /* PayeeListEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD412AFB20E0A42C0002C37E /* PayeeListEndpoint.swift */; };
 		CD412AFF20E0A42C0002C37E /* PayeeTransactionsListEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD412AFC20E0A42C0002C37E /* PayeeTransactionsListEndpoint.swift */; };
@@ -20,10 +19,29 @@
 		CD412B0B20E0A4450002C37E /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD412B0820E0A4440002C37E /* APIRequest.swift */; };
 		CD412B0C20E0A4450002C37E /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD412B0920E0A4440002C37E /* APIError.swift */; };
 		CD412B0E20E0A44F0002C37E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD412B0D20E0A44F0002C37E /* Result.swift */; };
+		CD7B099521AA0FAA0023C154 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7B099421AA0FAA0023C154 /* AppDelegate.swift */; };
+		CD7B099C21AA0FAC0023C154 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7B099B21AA0FAC0023C154 /* Assets.xcassets */; };
+		CD7B099F21AA0FAC0023C154 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7B099D21AA0FAC0023C154 /* LaunchScreen.storyboard */; };
+		CD7B09C321AA0FFC0023C154 /* PayeeTransactionListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7B09C021AA0FFC0023C154 /* PayeeTransactionListViewController.swift */; };
+		CD7B09C421AA0FFC0023C154 /* BudgetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7B09C121AA0FFC0023C154 /* BudgetListViewController.swift */; };
+		CD7B09C521AA0FFC0023C154 /* PayeeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7B09C221AA0FFC0023C154 /* PayeeListViewController.swift */; };
+		CD7B09C921AA101A0023C154 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7B09C621AA101A0023C154 /* Config.swift */; };
+		CD7B09D321AA15380023C154 /* YnabApi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD412ADF20E0A40A0002C37E /* YnabApi.framework */; };
+		CD90CFEA21AA17F600F65573 /* UserEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD90CFE921AA17F600F65573 /* UserEndpoint.swift */; };
+		CD90CFEC21AA182B00F65573 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD90CFEB21AA182B00F65573 /* User.swift */; };
+		CD90CFEE21AA201F00F65573 /* APIErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD90CFED21AA201F00F65573 /* APIErrorResponse.swift */; };
+		CDF6762020ED61E000A676B3 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF6761F20ED61E000A676B3 /* APIResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		CD412AEA20E0A40A0002C37E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD412AD620E0A40A0002C37E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD412ADE20E0A40A0002C37E;
+			remoteInfo = YnabApi;
+		};
+		CD7B09D121AA152D0023C154 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CD412AD620E0A40A0002C37E /* Project object */;
 			proxyType = 1;
@@ -37,7 +55,6 @@
 		CD412AE220E0A40A0002C37E /* YnabApi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YnabApi.h; sourceTree = "<group>"; };
 		CD412AE320E0A40A0002C37E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD412AE820E0A40A0002C37E /* YnabApiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YnabApiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD412AED20E0A40A0002C37E /* YnabApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YnabApiTests.swift; sourceTree = "<group>"; };
 		CD412AEF20E0A40A0002C37E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD412AFB20E0A42C0002C37E /* PayeeListEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayeeListEndpoint.swift; sourceTree = "<group>"; };
 		CD412AFC20E0A42C0002C37E /* PayeeTransactionsListEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayeeTransactionsListEndpoint.swift; sourceTree = "<group>"; };
@@ -49,6 +66,19 @@
 		CD412B0820E0A4440002C37E /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		CD412B0920E0A4440002C37E /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		CD412B0D20E0A44F0002C37E /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		CD7B099221AA0FAA0023C154 /* SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD7B099421AA0FAA0023C154 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD7B099B21AA0FAC0023C154 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD7B099E21AA0FAC0023C154 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD7B09A021AA0FAC0023C154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD7B09C021AA0FFC0023C154 /* PayeeTransactionListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayeeTransactionListViewController.swift; sourceTree = "<group>"; };
+		CD7B09C121AA0FFC0023C154 /* BudgetListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BudgetListViewController.swift; sourceTree = "<group>"; };
+		CD7B09C221AA0FFC0023C154 /* PayeeListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayeeListViewController.swift; sourceTree = "<group>"; };
+		CD7B09C621AA101A0023C154 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		CD90CFE921AA17F600F65573 /* UserEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEndpoint.swift; sourceTree = "<group>"; };
+		CD90CFEB21AA182B00F65573 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CD90CFED21AA201F00F65573 /* APIErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorResponse.swift; sourceTree = "<group>"; };
+		CDF6761F20ED61E000A676B3 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +97,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CD7B098F21AA0FAA0023C154 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD7B09D321AA15380023C154 /* YnabApi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -75,7 +113,9 @@
 			children = (
 				CD412AE120E0A40A0002C37E /* YnabApi */,
 				CD412AEC20E0A40A0002C37E /* YnabApiTests */,
+				CD7B099321AA0FAA0023C154 /* SampleApp */,
 				CD412AE020E0A40A0002C37E /* Products */,
+				CD7B09CF21AA15260023C154 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +124,7 @@
 			children = (
 				CD412ADF20E0A40A0002C37E /* YnabApi.framework */,
 				CD412AE820E0A40A0002C37E /* YnabApiTests.xctest */,
+				CD7B099221AA0FAA0023C154 /* SampleApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +135,7 @@
 				CD412B0720E0A4440002C37E /* YnabApi.swift */,
 				CD412B0920E0A4440002C37E /* APIError.swift */,
 				CD412B0820E0A4440002C37E /* APIRequest.swift */,
+				CDF6761F20ED61E000A676B3 /* APIResponse.swift */,
 				CD412B0F20E0A4520002C37E /* Shared */,
 				CD412AF920E0A4170002C37E /* Endpoints */,
 				CD412AFA20E0A41F0002C37E /* Models */,
@@ -106,7 +148,6 @@
 		CD412AEC20E0A40A0002C37E /* YnabApiTests */ = {
 			isa = PBXGroup;
 			children = (
-				CD412AED20E0A40A0002C37E /* YnabApiTests.swift */,
 				CD412AEF20E0A40A0002C37E /* Info.plist */,
 			);
 			path = YnabApiTests;
@@ -115,6 +156,7 @@
 		CD412AF920E0A4170002C37E /* Endpoints */ = {
 			isa = PBXGroup;
 			children = (
+				CD90CFE921AA17F600F65573 /* UserEndpoint.swift */,
 				CD412AFD20E0A42C0002C37E /* BudgetListEndpoint.swift */,
 				CD412AFB20E0A42C0002C37E /* PayeeListEndpoint.swift */,
 				CD412AFC20E0A42C0002C37E /* PayeeTransactionsListEndpoint.swift */,
@@ -125,6 +167,8 @@
 		CD412AFA20E0A41F0002C37E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				CD90CFED21AA201F00F65573 /* APIErrorResponse.swift */,
+				CD90CFEB21AA182B00F65573 /* User.swift */,
 				CD412B0120E0A43B0002C37E /* Budget.swift */,
 				CD412B0220E0A43B0002C37E /* Payee.swift */,
 				CD412B0320E0A43B0002C37E /* Transaction.swift */,
@@ -138,6 +182,28 @@
 				CD412B0D20E0A44F0002C37E /* Result.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		CD7B099321AA0FAA0023C154 /* SampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				CD7B099421AA0FAA0023C154 /* AppDelegate.swift */,
+				CD7B09C621AA101A0023C154 /* Config.swift */,
+				CD7B09C121AA0FFC0023C154 /* BudgetListViewController.swift */,
+				CD7B09C221AA0FFC0023C154 /* PayeeListViewController.swift */,
+				CD7B09C021AA0FFC0023C154 /* PayeeTransactionListViewController.swift */,
+				CD7B099B21AA0FAC0023C154 /* Assets.xcassets */,
+				CD7B099D21AA0FAC0023C154 /* LaunchScreen.storyboard */,
+				CD7B09A021AA0FAC0023C154 /* Info.plist */,
+			);
+			path = SampleApp;
+			sourceTree = "<group>";
+		};
+		CD7B09CF21AA15260023C154 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,13 +256,31 @@
 			productReference = CD412AE820E0A40A0002C37E /* YnabApiTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CD7B099121AA0FAA0023C154 /* SampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD7B09B721AA0FAC0023C154 /* Build configuration list for PBXNativeTarget "SampleApp" */;
+			buildPhases = (
+				CD7B098E21AA0FAA0023C154 /* Sources */,
+				CD7B098F21AA0FAA0023C154 /* Frameworks */,
+				CD7B099021AA0FAA0023C154 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD7B09D221AA152D0023C154 /* PBXTargetDependency */,
+			);
+			name = SampleApp;
+			productName = SampleApp;
+			productReference = CD7B099221AA0FAA0023C154 /* SampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		CD412AD620E0A40A0002C37E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1000;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Vivir Creative";
 				TargetAttributes = {
@@ -207,6 +291,9 @@
 					CD412AE720E0A40A0002C37E = {
 						CreatedOnToolsVersion = 10.0;
 					};
+					CD7B099121AA0FAA0023C154 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 				};
 			};
 			buildConfigurationList = CD412AD920E0A40A0002C37E /* Build configuration list for PBXProject "YnabApi" */;
@@ -215,6 +302,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CD412AD520E0A40A0002C37E;
 			productRefGroup = CD412AE020E0A40A0002C37E /* Products */;
@@ -223,6 +311,7 @@
 			targets = (
 				CD412ADE20E0A40A0002C37E /* YnabApi */,
 				CD412AE720E0A40A0002C37E /* YnabApiTests */,
+				CD7B099121AA0FAA0023C154 /* SampleApp */,
 			);
 		};
 /* End PBXProject section */
@@ -242,6 +331,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CD7B099021AA0FAA0023C154 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD7B099F21AA0FAC0023C154 /* LaunchScreen.storyboard in Resources */,
+				CD7B099C21AA0FAC0023C154 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -249,14 +347,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD90CFEC21AA182B00F65573 /* User.swift in Sources */,
+				CDF6762020ED61E000A676B3 /* APIResponse.swift in Sources */,
 				CD412AFF20E0A42C0002C37E /* PayeeTransactionsListEndpoint.swift in Sources */,
 				CD412AFE20E0A42C0002C37E /* PayeeListEndpoint.swift in Sources */,
 				CD412B0620E0A43B0002C37E /* Transaction.swift in Sources */,
 				CD412B0420E0A43B0002C37E /* Budget.swift in Sources */,
+				CD90CFEE21AA201F00F65573 /* APIErrorResponse.swift in Sources */,
 				CD412B0020E0A42C0002C37E /* BudgetListEndpoint.swift in Sources */,
 				CD412B0520E0A43B0002C37E /* Payee.swift in Sources */,
 				CD412B0E20E0A44F0002C37E /* Result.swift in Sources */,
 				CD412B0B20E0A4450002C37E /* APIRequest.swift in Sources */,
+				CD90CFEA21AA17F600F65573 /* UserEndpoint.swift in Sources */,
 				CD412B0A20E0A4450002C37E /* YnabApi.swift in Sources */,
 				CD412B0C20E0A4450002C37E /* APIError.swift in Sources */,
 			);
@@ -266,7 +368,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD412AEE20E0A40A0002C37E /* YnabApiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD7B098E21AA0FAA0023C154 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD7B09C521AA0FFC0023C154 /* PayeeListViewController.swift in Sources */,
+				CD7B099521AA0FAA0023C154 /* AppDelegate.swift in Sources */,
+				CD7B09C921AA101A0023C154 /* Config.swift in Sources */,
+				CD7B09C321AA0FFC0023C154 /* PayeeTransactionListViewController.swift in Sources */,
+				CD7B09C421AA0FFC0023C154 /* BudgetListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +391,23 @@
 			target = CD412ADE20E0A40A0002C37E /* YnabApi */;
 			targetProxy = CD412AEA20E0A40A0002C37E /* PBXContainerItemProxy */;
 		};
+		CD7B09D221AA152D0023C154 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD412ADE20E0A40A0002C37E /* YnabApi */;
+			targetProxy = CD7B09D121AA152D0023C154 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD7B099D21AA0FAC0023C154 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD7B099E21AA0FAC0023C154 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CD412AF120E0A40A0002C37E /* Debug */ = {
@@ -492,6 +621,46 @@
 			};
 			name = Release;
 		};
+		CD7B09B821AA0FAC0023C154 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7R7P8GYMNZ;
+				INFOPLIST_FILE = SampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vivir.SampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD7B09B921AA0FAC0023C154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7R7P8GYMNZ;
+				INFOPLIST_FILE = SampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vivir.SampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -518,6 +687,15 @@
 			buildConfigurations = (
 				CD412AF720E0A40A0002C37E /* Debug */,
 				CD412AF820E0A40A0002C37E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD7B09B721AA0FAC0023C154 /* Build configuration list for PBXNativeTarget "SampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD7B09B821AA0FAC0023C154 /* Debug */,
+				CD7B09B921AA0FAC0023C154 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

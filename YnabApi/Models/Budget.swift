@@ -13,32 +13,28 @@ public struct BudgetList: Codable {
 }
 
 public struct Budget: Codable {
+
+    public struct DateFormat: Codable {
+        public let format: String
+    }
+
+    public struct CurrencyFormat: Codable {
+        public let iso_code: String
+        public let example_format: String
+        public let decimal_digits: Int
+        public let decimal_separator: String
+        public let symbol_first: Bool
+        public let group_separator: String
+        public let currency_symbol: String
+        public let display_symbol: Bool
+    }
+
     public let id: String
     public let name: String
-    public let lastModifiedOn: String
-    public let firstMonth: String
-    public let lastMonth: String
-
-    //"date_format": {
-    //    "format": "MM/DD/YYYY"
-    //},
-
-    //"currency_format": {
-    //    "iso_code": "USD",
-    //    "example_format": "123,456.78",
-    //    "decimal_digits": 2,
-    //    "decimal_separator": ".",
-    //    "symbol_first": true,
-    //    "group_separator": ",",
-    //    "currency_symbol": "$",
-    //    "display_symbol": true
-    //},
-
-    enum CodingKeys: String, CodingKey {
-        case id
-        case name
-        case lastModifiedOn = "last_modified_on"
-        case firstMonth = "first_month"
-        case lastMonth = "last_month"
-    }
+    public let last_modified_on: String
+    public let first_month: String
+    public let last_month: String
+    public let date_format: DateFormat
+    public let currency_format: CurrencyFormat
 }
+
